@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store</title>
-    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Grocery Store</h1>
+            <div class="search">
+                <div id="search">
+                  <form class='form-inline'>
+                    <div class="input-group">
+                      <input type='text' id='search' class="form-control search-form" placeholder="Scooby Doo">
+                      <span class="input-group-btn" style="width:39px">
+                        <button id="search-this"type="button" class="pull-right btn btn-default search-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                </form>   
+              </div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="home.htm">Home</a></li>
+                    <li><a href="products.htm">Products</a></li>
+                    <li><a href="about.htm">About Us</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -65,6 +79,8 @@
             <p>Reach out to us for any queries or feedback.</p>
         </div>
     </section>
+
+    
 
     <footer>
         <div class="container">
