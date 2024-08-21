@@ -105,6 +105,7 @@ section {
     margin: 10px;
     width: 30%;
     transition: transform 0.3s ease;
+    border-radius: 20px;
 }
 
 .product:hover {
