@@ -55,8 +55,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+
+
 .dropdown{
     display: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    align-content: space-around;
 }
 
 nav ul li:hover .dropdown{
@@ -71,6 +77,7 @@ nav ul li:hover .dropdown{
 .dropdown ul{
 display: block;
 margin: 10px;
+align-items: flex;
 }
 
 .dropdown ul li a{
