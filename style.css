@@ -105,7 +105,7 @@ section {
     margin: 10px;
     width: 18%;
     height: 250px:
-    transition: transform 0.3s ease;
+    transform: scale(1);
     border-radius: 15px;
 }
 
