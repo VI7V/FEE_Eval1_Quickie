@@ -195,6 +195,7 @@ section {
 .product-description {
     position: absolute;
     left: 10px;
+    text-align: left;
   }
 
   .product-price {
