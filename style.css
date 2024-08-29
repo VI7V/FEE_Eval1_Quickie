@@ -187,10 +187,41 @@ section {
     padding: 20px;
     margin: 10px;
     width: 18%;
-    height: 250px;
+    height: 290px;
     transform: scale(1);
     border-radius: 15px;
 }
+
+.product-description {
+    position: absolute;
+    left: 10px;
+  }
+
+  .product-price {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+  }
+  
+  .price-value {
+    font-weight: bold;
+  }
+  
+.addToCartButton {
+    background-color: #4CAF50;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+  }
 
 .product:hover {
     transform: scale(1.05);
