@@ -217,9 +217,12 @@ section {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    float: right;
+    float:right;
   }
 
+  .addToCartButton:hover{opacity: 0.6}
+
+  
 .product:hover {
     transform: scale(1.05);
 }
