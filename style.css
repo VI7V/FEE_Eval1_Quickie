@@ -64,7 +64,7 @@ nav ul li:hover .dropdown{
     position: absolute;
     left: 1;
     top: 100%;
-    background-color:#ebc909;
+    background-color:#ebbc09;
 
 }
 
@@ -201,6 +201,7 @@ section {
   
   .price-value {
     font-weight: bold;
+    
   }
   
 .addToCartButton {
