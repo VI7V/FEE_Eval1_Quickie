@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #006769;
     color: white;
     padding: 20px;
     width: 100%;
@@ -51,12 +51,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-
 .dropdown{
     display: none;
     padding-left: 10px;
@@ -68,9 +62,9 @@ nav ul li a:hover {
 nav ul li:hover .dropdown{
     display: block;
     position: absolute;
-    left: 0;
+    left: 1;
     top: 100%;
-    background-color:#4CAF50;
+    background-color:#ebc909;
 
 }
 
@@ -115,7 +109,7 @@ section {
     position: relative;
     width: 100%;
     border-radius: 50px;
-    background: #4CAF50;
+    background: #ebc909;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -183,7 +177,8 @@ section {
 }
 
 .product {
-    border: 1px solid #ccc;
+    border: 1px solid white;
+    background-color: #ebc909;
     padding: 20px;
     margin: 10px;
     width: 18%;
@@ -209,7 +204,7 @@ section {
   }
   
 .addToCartButton {
-    background-color: #4CAF50;
+    background-color: #006769;
     position: absolute;
     bottom: 10px;
     right: 10px;
