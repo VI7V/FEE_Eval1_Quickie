@@ -109,7 +109,7 @@ section {
     position: relative;
     width: 100%;
     border-radius: 50px;
-    background: #ebc909;
+    background: #ebbc09;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -178,7 +178,7 @@ section {
 
 .product {
     border: 1px solid white;
-    background-color: #ebc909;
+    background-color: #ebdc09;
     padding: 20px;
     margin: 10px;
     width: 18%;
