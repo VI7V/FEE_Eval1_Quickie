@@ -177,6 +177,26 @@ section {
   justify-content: space-around;
 }
 
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+a:active{
+  text-decoration: none;
+  color: black;
+}
+
 .product {
   border: 1px solid white;
   background-color: #ebbc09;
