@@ -36,6 +36,10 @@ nav{
   margin-right: 0;
 }
 
+.navright{
+align-items: right;
+}
+
 nav ul {
   list-style: none;
   display: flex;
