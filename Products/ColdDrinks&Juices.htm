@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js"></script>
     <header>
         <div class="container">
             <h1>Quickie</h1>
@@ -34,10 +35,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="../home.htm">Home</a></li>
-                    <li><a href="../products.htm">Products</a>
-                        <ul class="dropdown">
-                            <li><a href="Products/Veggies&Fruits.htm">Veggies & Fruits</a></li>
+                    <li><a href="home.htm">Home</a></li>
+                    <li><a href="products.htm">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="Products/Veggies&Fruits.htm">Veggies & Fruits</a></li>
                             <br>
                             <li><a href="Products/AttaDalRice.htm">Atta, Dal & Rice</a></li>
                             <br>
@@ -58,14 +59,25 @@
                             <li><a href="Products/PetCare.htm">Pet Care</a></li>
                     </ul>
                     </li>
-                    <li><a href="../about.htm">About Us</a></li>
-                    <li><a href="../contact.htm">Contact</a></li>
+                
+                    <li><a href="about.htm">About Us</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
                 </ul>
             </nav>
-            <div class="navright">
-                <a href="cart.html"><img src="Images\shoppingcart.png" \ width="50px" ></a>
-            </div>
         </div>
+        <!-- Cart button and side cart markup -->
+<div id="cartButton">
+    <img src="Images\shoppingcart.png" width="50px" onclick="toggleCart()">
+</div>
+
+<!-- Side Cart -->
+<div id="sideCart" class="cart-container">
+    <h2>Your Cart</h2>
+    <div class="cart-items">
+        <p>Your cart is empty</p>
+    </div>
+    <button class="close-cart" onclick="toggleCart()">Close Cart</button>
+</div>
     </header>
            <section id="products">
         <div class="container">
