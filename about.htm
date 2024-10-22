@@ -7,65 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Quickie</h1>
-            <div class="search">
-                 <div id="search">
-                   <form class='form-inline'>
-                     <div class="input-group">
-                       <div class="container">
+  <script src="script.js"></script>
+  <header>
+      <div class="container">
+          <h1>Quickie</h1>
+          <div class="search">
+              <div id="search">
+                <form class='form-inline'>
+                  <div class="input-group">
+                      <div class="container">
                           <div class="search-container">
-                              <input class="input" type="text">
-                              <svg viewBox="0 0 24 24" class="search__icon">
-                                <g>
-                                  <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                  </path>
-                                </g>
-                              </svg>
-                            </div>
-                        </div>
-                      <span class="input-group-btn" style="width:39px">
-                      </span>
-                    </div>
-                </form>   
-              </div>
+                            <input class="input" type="text">
+                            <svg viewBox="0 0 24 24" class="search__icon">
+                              <g>
+                                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                              </g>
+                            </svg>
+                          </div>
+                          </div>
+                    <span class="input-group-btn" style="width:39px">
+                     
+                    </span>
+                  </div>
+              </form>   
             </div>
-            <nav>
-                <ul>
-                    <li><a href="home.htm">Home</a></li>
-                    <li><a href="products.htm">Products</a>
-                        <ul class="dropdown">
-                          <li><a href="Products/Veggies&Fruits.htm">Veggies & Fruits</a></li>
-                            <br>
-                            <li><a href="Products/AttaDalRice.htm">Atta, Dal & Rice</a></li>
-                            <br>
-                            <li><a href="Products/DairyProducts.htm">Dairy Products</a></li>
-                            <br>
-                            <li><a href="Products/Munchies.htm">Munchies</a></li>
-                            <br>
-                            <li><a href="Products/ColdDrinks&Juices.htm">Cold Drinks & Juices</a></li>
-                            <br>
-                            <li><a href="Products/PrepackedFood.htm">Prepacked Food</a></li>
-                            <br>
-                            <li><a href="Products/PersonalCare.htm">Personal Care</a></li>
-                            <br>
-                            <li><a href="Products/Alcohol&Mixers.htm">Alcohol & Mixers</a></li>
-                            <br>
-                            <li><a href="Products/Pharma&Wellness.htm">Pharma & Wellness</a></li>
-                            <br>
-                            <li><a href="Products/PetCare.htm">Pet Care</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="about.htm">About Us</a></li>
-                    <li><a href="contact.htm">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="navright">
-                <a href="cart.html"><img src="Images\shoppingcart.png" \ width="50px" ></a>
-            </div>
-        </div>
-    </header>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="home.htm">Home</a></li>
+                  <li><a href="products.htm">Products</a>
+                  <ul class="dropdown">
+                      <li><a href="Products/Veggies&Fruits.htm">Veggies & Fruits</a></li>
+                          <br>
+                          <li><a href="Products/AttaDalRice.htm">Atta, Dal & Rice</a></li>
+                          <br>
+                          <li><a href="Products/DairyProducts.htm">Dairy Products</a></li>
+                          <br>
+                          <li><a href="Products/Munchies.htm">Munchies</a></li>
+                          <br>
+                          <li><a href="Products/ColdDrinks&Juices.htm">Cold Drinks & Juices</a></li>
+                          <br>
+                          <li><a href="Products/PrepackedFood.htm">Prepacked Food</a></li>
+                          <br>
+                          <li><a href="Products/PersonalCare.htm">Personal Care</a></li>
+                          <br>
+                          <li><a href="Products/Alcohol&Mixers.htm">Alcohol & Mixers</a></li>
+                          <br>
+                          <li><a href="Products/Pharma&Wellness.htm">Pharma & Wellness</a></li>
+                          <br>
+                          <li><a href="Products/PetCare.htm">Pet Care</a></li>
+                  </ul>
+                  </li>
+              
+                  <li><a href="about.htm">About Us</a></li>
+                  <li><a href="contact.htm">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+      <!-- Cart button and side cart markup -->
+<div id="cartButton">
+  <img src="Images\shoppingcart.png" width="50px" onclick="toggleCart()">
+</div>
+
+<!-- Side Cart -->
+<div id="sideCart" class="cart-container">
+  <h2>Your Cart</h2>
+  <div class="cart-items">
+      <p>Your cart is empty</p>
+  </div>
+  <button class="close-cart" onclick="toggleCart()">Close Cart</button>
+</div>
+  </header>
 
     <section id="about">
       <div class="container">
