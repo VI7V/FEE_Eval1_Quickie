@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quickie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <script src="script.js"></script>
@@ -62,9 +65,24 @@
                 
                     <li><a href="about.htm">About Us</a></li>
                     <li><a href="contact.htm">Contact</a></li>
+                    <li class="loginbutton" id="loginbutton"><a href="#">Login</a></li>
                 </ul>
             </nav>
         </div>
+        <div id="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </div>
+
+    <!-- Side Popup Menu -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="home.htm">Home</a>
+        <a href="products.htm">Products</a>
+        <a href="about.htm">About Us</a>
+        <a href="contact.htm">Contact</a>
+        <a href="#">Login</a>
+    </div>
         <!-- Cart button and side cart markup -->
 <div id="cartButton">
     <img src="Images\shoppingcart.png" width="50px" onclick="toggleCart()">
@@ -80,10 +98,34 @@
 </div>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <h2>Welcome to Our Grocery Store</h2>
-            <p>Find the best products for your daily needs.</p>
+    <section>
+        <div class="image-slider">
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+        
+            <div class="slides">
+                <div class="slide">
+                    <img src="Images/yellow.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="Images/red.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="Images/green.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="Images/blue.png" alt="Image 4">
+                </div>
+            </div>
+        
+            <div class="manual-nav">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
         </div>
     </section>
 
@@ -184,6 +226,17 @@
             <h2>About Us</h2>
             <p>We are dedicated to providing the best grocery products at affordable prices.</p>
         </div>
+        <div class="popup">
+            <div class="popup-content">
+            <img src="Images/png-transparent-computer-icons-button-close-angle-rectangle-logo-thumbnail.png" alt="" class="close">
+                <i class="fa-solid fa-user"></i>
+             <input type="text" placeholder="username" class="inputlogin" >
+             <input type="password" placeholder="password" class="inputlogin">
+             <a href="#" class="loginbutton" id="loginbutton">Login</a>
+        
+            </div>
+        
+              </div>
     </section>
 
     <section id="contact">
@@ -197,5 +250,14 @@
             <p>&copy; 2024 Grocery Store. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById("loginbutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex";
+        })
+
+        document.querySelector(".close").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none";
+        })
+    </script>
 </body>
 </html>
