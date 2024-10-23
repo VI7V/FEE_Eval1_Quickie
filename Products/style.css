@@ -605,6 +605,9 @@ border-radius: 50%;
   opacity: 0.7;
 }
 
+
+
+
 .loginbutton{
   background-color: #006769;
   padding: 2px;
@@ -768,4 +771,81 @@ border: 1px solid gray;
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+
+.image-slider {
+  width: 1200px; /* Set the width of the slider */
+  height: 450px; /* Set the height of the slider */
+  margin: 20px auto; /* Center the slider */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* Position relative for absolute elements */
+  border-radius: 10px; /* Round corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.slides {
+  width: 400%; /* Total width for 4 slides */
+  height: 100%; /* Full height of the slider */
+  display: flex; /* Use flexbox to arrange slides */
+  transition: transform 0.6s ease-in-out; /* Smooth transition */
+}
+
+.slide {
+  width: 100%; /* Each slide takes full width */
+  flex: 0 0 100%; /* Ensures each slide is of equal width */
+  display: flex; /* Use flexbox to center images */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* For absolute positioning of the image */
+}
+
+.slide img {
+  width: 100%; /* Full width of the slide */
+  height: 100%; /* Full height of the slide */
+  object-fit: cover; /* Fit image within the area */
+  border-radius: 10px; /* Round corners */
+}
+
+.manual-nav {
+  position: absolute; /* Position relative to the slider */
+  width: 100%; /* Full width for navigation */
+  bottom: 10px; /* Position at the bottom */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the buttons */
+}
+
+.manual-btn {
+  border: 2px solid #fff; /* White border */
+  padding: 5px; /* Space around button */
+  border-radius: 50%; /* Round button */
+  cursor: pointer; /* Pointer cursor */
+  transition: 0.3s; /* Smooth transition for hover */
+  margin: 0 10px; /* Space between buttons */
+}
+
+.manual-btn:hover {
+  background-color: #fff; /* Change background on hover */
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none; /* Hide radio buttons */
+}
+
+/* Transitions based on which radio button is checked */
+#radio1:checked ~ .slides {
+  transform: translateX(0); /* First slide */
+}
+
+#radio2:checked ~ .slides {
+  transform: translateX(-100%); /* Second slide */
+}
+
+#radio3:checked ~ .slides {
+  transform: translateX(-200%); /* Third slide */
+}
+
+#radio4:checked ~ .slides {
+  transform: translateX(-300%); /* Fourth slide */
 }
