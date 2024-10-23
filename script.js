@@ -44,3 +44,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.getElementById("loginbutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex";
+        })
+
+        document.querySelector(".close").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none";
+        })
+
+
+
+function toggleMenu() {
+    document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+    document.getElementById("sideMenu").style.width = "0";
+}
