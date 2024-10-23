@@ -8,6 +8,8 @@ function toggleCart() {
 }
 
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Select all 'Add to Cart' buttons
     document.querySelectorAll('.addToCartButton').forEach(function(button) {
@@ -46,13 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.getElementById("loginbutton").addEventListener("click",function(){
-            document.querySelector(".popup").style.display="flex";
-        })
-
-        document.querySelector(".close").addEventListener("click",function(){
-            document.querySelector(".popup").style.display="none";
-        })
 
 
 
