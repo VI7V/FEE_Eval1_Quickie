@@ -58,3 +58,7 @@ function toggleMenu() {
 function closeMenu() {
     document.getElementById("sideMenu").style.width = "0";
 }
+
+function Search(){
+    window.location.href = "Search.html";
+}
