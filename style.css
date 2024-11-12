@@ -270,6 +270,10 @@ a.link:active{
   text-align: left;
 }
 
+.product-description h4, .product-description h5, .product-price {
+  font-size: 0.9em;
+}
+
 .product-price {
   position: absolute;
   bottom: 15px;
